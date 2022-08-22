@@ -1,0 +1,67 @@
+body{
+	background-color: #d9e8ff;
+}
+a:link,a:visited{
+	text-decoration: none;
+	color:#000;
+}
+a:hover{
+	text-decoration: underline;
+}
+.container{
+	margin:1em auto;
+	padding:1em 2em;
+	max-width:500px;
+	width:96%;
+	border:1px solid #e6e6e6;
+	border-radius: 10px;
+	background-color: #fff;
+}
+h1{
+	font-size:1.5em;
+	text-align: center;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+}
+@media screen and (max-width: 540px) {
+	/* 540px以下に適用されるCSS（スマホ用） */
+	.container{
+		padding:1em 0.5em;
+	}
+	table {
+		width:96%;
+		
+		}
+}
+th{
+	background-color: #ccc;
+	border:1px solid #e6e6e6;
+}
+td{
+	padding:0.2em 1em;
+	border:1px solid #e6e6e6;
+}
+	tr td:first-child{
+		text-align: center;
+	}
+
+.btn{
+	text-align: center;
+}
+.btn a{
+	display:inline-block;
+	width:50%;
+	margin:2em auto;
+	padding:0.6em 1em;
+	text-align: center;
+	background-color: #ccc;
+	border:1px solid #e6e6e6;
+	border-radius: 100px;
+}
+	.btn a:hover{
+		text-decoration: none;
+		color:blue;
+	}

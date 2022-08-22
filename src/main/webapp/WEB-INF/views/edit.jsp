@@ -6,8 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>編集画面 - メモアプリ</title>
+<link href="<%= request.getContextPath() %>/css/base.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 </head>
 <body>
+	<div class="container">
 	<h1>メモ編集</h1>
 	<p><%= request.getAttribute("message") %></p>
 	
@@ -24,6 +27,7 @@
 		<button type="submit">保存する</button>
 	</form>
 	<br>
-	<p><a href='show?id=<%= request.getAttribute("id") %>'>キャンセル</a></p>
+	<p class="btn"><a href='show?id=<%= request.getAttribute("id") %>'>キャンセル</a></p>
+	</div>
 </body>
 </html>
